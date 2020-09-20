@@ -3,9 +3,9 @@ package com.lcdscreen;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LcdTranslater {
+public class Converter {
 	
-	private LcdTranslater(){
+	private Converter(){
 		// Private constructor
 	}
 	

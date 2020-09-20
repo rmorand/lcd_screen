@@ -6,7 +6,7 @@ import java.util.List;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-class LcdTranslaterTest {
+class ConverterTest {
 	
 	@Test
 	public void numberToDigit_9(){
@@ -14,7 +14,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 9l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -27,7 +27,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 8l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -40,7 +40,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 7l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -53,7 +53,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 6l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -66,7 +66,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 5l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -79,7 +79,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 4l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -92,7 +92,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 3l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -105,7 +105,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 2l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -118,7 +118,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 1l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -134,7 +134,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 0l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(1, result.size());
@@ -150,7 +150,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 10000l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(5, result.size());
@@ -173,7 +173,7 @@ class LcdTranslaterTest {
 		Long numberToTranslate = 01000l;
 		
 		//When
-		List<Integer> result = LcdTranslater.numberToDigits(numberToTranslate);
+		List<Integer> result = Converter.numberToDigits(numberToTranslate);
 		
 		//THEN
 		assertEquals(5, result.size());
