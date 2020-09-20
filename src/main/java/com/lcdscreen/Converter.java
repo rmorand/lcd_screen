@@ -9,15 +9,11 @@ public class Converter {
 		// Private constructor
 	}
 	
-	public static List<Integer> numberToDigits(Long number) {
+	public static List<Integer> numberToDigits(String userNumber) {
 		LinkedList<Integer> digits = new LinkedList<>();
 		
-		if (number == 0l) {
-			digits.push(0);
-		}
-		while (number > 0) {
-			digits.push(Math.toIntExact(number % 10));
-			number = number / 10;
+		for (String s : userNumber.split("")) {
+			digits.add(Integer.valueOf(s));
 		}
 		
 		return digits;

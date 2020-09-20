@@ -11,7 +11,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_9(){
 		//GIVEN
-		Long numberToTranslate = 9l;
+		String numberToTranslate = "9";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -24,7 +24,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_8(){
 		//GIVEN
-		Long numberToTranslate = 8l;
+		String numberToTranslate = "8";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -37,7 +37,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_7(){
 		//GIVEN
-		Long numberToTranslate = 7l;
+		String numberToTranslate = "7";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -50,7 +50,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_6(){
 		//GIVEN
-		Long numberToTranslate = 6l;
+		String numberToTranslate = "6";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -63,7 +63,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_5(){
 		//GIVEN
-		Long numberToTranslate = 5l;
+		String numberToTranslate = "5";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -76,7 +76,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_4(){
 		//GIVEN
-		Long numberToTranslate = 4l;
+		String numberToTranslate = "4";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -89,7 +89,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_3(){
 		//GIVEN
-		Long numberToTranslate = 3l;
+		String numberToTranslate = "3";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -102,7 +102,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_2(){
 		//GIVEN
-		Long numberToTranslate = 2l;
+		String numberToTranslate = "2";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -115,7 +115,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_1(){
 		//GIVEN
-		Long numberToTranslate = 1l;
+		String numberToTranslate = "1";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -131,7 +131,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_0(){
 		//GIVEN
-		Long numberToTranslate = 0l;
+		String numberToTranslate = "0";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -147,7 +147,7 @@ class ConverterTest {
 	@Test
 	public void numberToDigit_10000(){
 		//GIVEN
-		Long numberToTranslate = 10000l;
+		String numberToTranslate = "10000";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
@@ -163,14 +163,11 @@ class ConverterTest {
 	
 	/**
 	 * test pour vérifier un chiffre commençant par 0
-	 *
-	 * Le test est pour le moment désactiver en attendant une solution pour l'écriture de nombre commençant par 0
 	 */
 	@Test
-	@Disabled
 	public void numberToDigit_01000(){
 		//GIVEN
-		Long numberToTranslate = 01000l;
+		String numberToTranslate = "01000";
 		
 		//When
 		List<Integer> result = Converter.numberToDigits(numberToTranslate);
