@@ -18,6 +18,18 @@ class ValidatorTest {
 	}
 	
 	@Test
+	public void test_null() {
+		//GIVEN
+		String number = null;
+		
+		//WHEN
+		boolean result = Validator.isValidNumber(number);
+		
+		//THEN
+		assertFalse(result);
+	}
+	
+	@Test
 	public void test_negative_number() {
 		//GIVEN
 		String number = "-1235";
