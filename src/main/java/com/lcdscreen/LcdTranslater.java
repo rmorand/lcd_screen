@@ -12,6 +12,9 @@ public class LcdTranslater {
 	public static List<Integer> numberToDigits(Long number) {
 		LinkedList<Integer> digits = new LinkedList<>();
 		
+		if (number == 0l) {
+			digits.push(0);
+		}
 		while (number > 0) {
 			digits.push(Math.toIntExact(number % 10));
 			number = number / 10;
